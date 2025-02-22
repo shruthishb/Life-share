@@ -1,0 +1,54 @@
+<div class="form-container">
+    <h2>To find the donors, kindly fill the below required details:</h2>
+    <form action="submit_donation.php" method="POST"> <!-- Add this line -->
+        <label for="blood-group">Blood Group:</label>
+        <select id="blood-group" name="blood_group"> <!-- Add name attribute -->
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <label>Type:</label>
+        <div class="checkbox-group">
+            <label><input type="radio" name="type" value="blood"> Blood</label>
+            <label><input type="radio" name="type" value="platelets"> Platelets</label>
+            <label><input type="radio" name="type" value="plasma"> Plasma</label>
+        </div>
+
+        <label for="units">No. of Units:</label>
+        <input type="number" id="units" name="units" min="1" required> <!-- Add name attribute -->
+
+        <label for="country">Country:</label>
+        <select id="country" name="country"> <!-- Add name attribute -->
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+        </select>
+
+        <label for="state">State:</label>
+        <select id="state" name="state"> <!-- Add name attribute -->
+            <option value="California">California</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Telangana">Telangana</option>
+        </select>
+
+        <label for="district">District:</label>
+        <select id="district" name="district"> <!-- Corrected id to district and added name attribute -->
+            <option value="Karimnagar">Karimnagar</option>
+            <option value="Warangal">Warangal</option>
+            <option value="Rangareddy">Ranga Reddy</option>
+            <option value="Kamareddy">Kamareddy</option>
+        </select>
+        <br><br>
+        <div id="button">
+            <button type="submit" class="search-button">Search</button> <!-- Changed to submit button -->
+        </div>
+    </form> <!-- Close the form -->
+</div>
